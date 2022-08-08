@@ -10,6 +10,6 @@ public class XrayConfig {
 
   @Bean
   public Filter TracingFilter() {
-    return new AWSXRayServletFilter("sample-service");
+    return new AWSXRayServletFilter("XrayTestService");
   }
 }
