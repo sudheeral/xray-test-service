@@ -1,4 +1,4 @@
-package com.pearson.xraytestservice.employee;
+package com.pearson.xraytestservice.controllers;
 
 import com.pearson.xraytestservice.service.RestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ class SampleController {
     return "sample";
   }
 
-  @GetMapping("/remote-sample")
+  @GetMapping("/sample-remote")
   public String getRemoteSample() {
     return service.getRemoteSample();
   }
