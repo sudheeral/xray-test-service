@@ -10,7 +10,7 @@ public class XrayConfig {
 
   @Bean
   public Filter TracingFilter() {
-    String segmentName = System.getProperty("XRAY_SEGMENT_NAME");
+    String segmentName = System.getenv("XRAY_SEGMENT_NAME");
     System.out.println("XRAY_SEGMENT_NAME: " + segmentName);
     return new AWSXRayServletFilter(segmentName);
   }
